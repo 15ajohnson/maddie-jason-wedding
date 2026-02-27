@@ -17,7 +17,7 @@ export class Header {
 
   navItems = [
     { label: 'Home', link: '/', fragment: undefined },
-    { label: 'Our Story', link: '/#our-story', fragment: 'our-story' },
+    { label: 'Our Story', link: '/', fragment: 'our-story' },
     { label: 'Gallery', link: '/gallery', fragment: undefined },
     { label: 'RSVP', link: '/rsvp', fragment: undefined },
     { label: 'Travel', link: '/travel', fragment: undefined },
