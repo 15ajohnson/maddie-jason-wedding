@@ -1,0 +1,117 @@
+.header-item {
+  width: 383px;
+  min-width: 383px;
+  margin: auto;
+  padding: 2em 0;
+  z-index: 10000;
+  position: relative;
+  cursor: pointer;
+}
+
+.header-item.condensed {
+  padding: 0.75em 0;
+}
+
+.header-text-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: #BDA369;
+  margin-bottom: 3em;
+}
+
+.condensed .header-text-item {
+  flex-direction: row;
+  column-gap: 0.4em;
+  margin-bottom: 0.25em;
+}
+
+.header-text {
+  font-family: 'Cedarville Cursive', cursive;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3.25em;
+  line-height: 0.5em;
+  letter-spacing: 0.04em;
+}
+
+.condensed .header-text {
+  font-size: 2.25em;
+  line-height: 1em;
+}
+
+.vector {
+  position: absolute;
+}
+
+.vector-top-right {
+  width: 29.69px;
+  height: 32.33px;
+  left: 340.78px;
+  top: 34.36px;
+}
+
+.vector-bottom-left {
+  width: 26px;
+  height: 36px;
+  left: 31px;
+  bottom: 0px;
+}
+
+.vector-top-left {
+  width: 17px;
+  height: 20px;
+  left: 0px;
+  top: 1em;
+}
+
+.vector-bottom-right {
+  width: 19px;
+  height: 18px;
+  right: 0px;
+  top: 0px;
+}
+
+.header-date-text-item {
+  margin: auto;
+  text-align: center;
+  color: #BDA369;
+}
+
+.header-date-text {
+  font-family: 'Caudex';
+  font-style: normal;
+  font-size: 1.75em;
+  font-weight: 700;
+  line-height: 29px;
+  letter-spacing: 0.24em;
+}
+
+.condensed .header-date-text {
+  font-size: 1.25em;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .header-item,
+  .header-text-item,
+  .header-text,
+  .header-date-text {
+    transition: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .vector-top-right {
+    left: 85%;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-item {
+    width: unset;
+    min-width: unset;
+    margin: 1em;
+  }
+}

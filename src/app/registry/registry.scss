@@ -1,0 +1,99 @@
+.registry-item {
+  width: 97%;
+  margin: auto;
+  background-color: #e6e3c9;
+  overflow: hidden;
+  padding: 0 1em;
+}
+
+.registry-accent-img-bottom {
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+@media (max-width: 480px) {
+  .registry-accent-img-bottom {
+    width: 200% !important;
+    max-width: 200%;
+    margin-left: -50%;
+  }
+}
+
+.registry-header-item {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  color: #bda369;
+}
+
+.registry-header-text {
+  font-family: 'Cedarville Cursive', cursive;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3.25em;
+  line-height: 0.5em;
+  letter-spacing: 0.04em;
+}
+
+@media (max-width: 480px) {
+  .registry-header-text {
+    font-size: clamp(1.8em, 8.5vw, 2.25em);
+  }
+}
+
+.section-title-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding-top: 1em;
+}
+
+.section-title-vector-right {
+  transform: rotate(59deg);
+}
+
+.section-title-vector path {
+  fill: #ffffff00;
+  stroke: #bdbfdb;
+}
+
+.registry-body-item {
+  width: 100%;
+  margin: 4em auto;
+  text-align: center;
+  color: #bda369;
+}
+
+.registry-body-text {
+  font-family: 'Caudex';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 40px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  margin-bottom: 1.5em;
+}
+
+.registry-address {
+  color: #8E95CF;
+}
+
+.registry-link {
+  color: #8E95CF;
+  text-decoration: underline;
+
+  &:hover {
+    color: #bda369;
+  }
+}
+
+@media (max-width: 768px) {
+  .registry-header-item {
+    width: 100%;
+  }
+
+  .registry-body-item {
+    margin: 2em auto;
+  }
+}

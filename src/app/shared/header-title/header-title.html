@@ -1,0 +1,17 @@
+<div class="header-item" [class.condensed]="condensed" routerLink="/">
+  <div class="header-text-item">
+    <img *ngIf="!condensed" src="/vector-top-left.svg" class="vector vector-top-left" width="17" height="20" alt="">
+    <img *ngIf="!condensed" src="/vector-bottom-left.svg" class="vector vector-bottom-left" width="26" height="36" alt="">
+
+    <p class="header-text">Maddie</p>
+    <p class="header-text">&</p>
+    <p class="header-text">Jason</p>
+
+    <img *ngIf="!condensed" src="/vector-bottom-right.svg" class="vector vector-bottom-right" width="19" height="18" alt="">
+    <img *ngIf="!condensed" src="/vector-top-right.svg" class="vector vector-top-right" width="29" height="32" alt="">
+  </div>
+
+  <div class="header-date-text-item">
+    <p class="header-date-text">05.22.26</p>
+  </div>
+</div>

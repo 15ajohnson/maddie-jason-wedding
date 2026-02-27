@@ -1,0 +1,9 @@
+<div>
+  <lightgallery [settings]="settings" id="static-thumbnails">
+    @for (image of images; track image.src) {
+      <a [attr.href]="image.src" [attr.data-src]="image.src">
+        <img [ngSrc]="image.thumb" alt="Gallery image" width="300" height="300" [priority]="$index === 0" />
+      </a>
+    }
+  </lightgallery>
+</div>

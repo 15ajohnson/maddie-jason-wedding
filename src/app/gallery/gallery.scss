@@ -1,0 +1,26 @@
+#static-thumbnails {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+  padding: 20px;
+
+  a {
+    display: block;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.2s;
+    background: #f0f0f0;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      display: block;
+    }
+  }
+}
+

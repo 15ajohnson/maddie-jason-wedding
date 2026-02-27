@@ -1,0 +1,13 @@
+.header-divider {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .header-divider {
+    display: block;
+    width: 100%;
+    margin: auto;
+    background: #c5c6d3;
+    height: 0.25em;
+  }
+}

@@ -1,0 +1,166 @@
+.home-img-item { 
+  width: 97%;
+  margin: auto;
+}
+
+.home-img-divider {
+  width: 97%;
+  margin: auto;
+  background: rgba(186, 174, 150, 0.52);
+  height: 1em;
+}
+
+.our-story-item {
+  width: 97%;
+  margin: auto;
+  background-color: #e6e3c9;
+  overflow: hidden;
+}
+
+.our-story-accent-img-top {
+  transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+.our-story-accent-img-bottom {
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+.our-story-header-item {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  color: #bda369;
+}
+
+.our-story-header-text {
+  font-family: 'Cedarville Cursive', cursive;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3.25em;
+  line-height: 0.5em;
+  letter-spacing: 0.04em;
+}
+
+@media (max-width: 480px) {
+  .our-story-header-text {
+    font-size: clamp(1.8em, 8.5vw, 3.25em);
+  }
+}
+
+.section-title-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding-top: 1em;
+}
+
+.section-title-vector-right {
+  transform: rotate(59deg);
+}
+
+.section-title-vector path {
+  fill: #ffffff00;
+  stroke: #bdbfdb;
+}
+
+.our-story-body-item {
+  width: 80%;
+  margin: 4em auto;
+  text-align: center;
+  color: #bda369;
+}
+
+.our-story-body-text {
+  font-family: 'Caudex';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 40px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  margin-bottom: 1.5em;
+}
+
+.countdown-wrapper {
+  text-align: center;
+  padding: 1em 0 3em;
+  color: #bda369;
+}
+
+.countdown-label {
+  font-family: 'Cedarville Cursive', cursive;
+  font-size: 1.75em;
+  letter-spacing: 0.08em;
+  margin-top: 0.75em;
+  margin-bottom: 0;
+  color: #bda369;
+}
+
+.countdown-units {
+  display: flex;
+  justify-content: center;
+  gap: 2.5em;
+}
+
+.countdown-unit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2em;
+}
+
+.countdown-number {
+  font-family: 'Caudex';
+  font-weight: 700;
+  font-size: 2.8em;
+  line-height: 1;
+  color: #bda369;
+  min-width: 2ch;
+  display: inline-block;
+  text-align: center;
+}
+
+.countdown-unit-label {
+  font-family: 'Caudex';
+  font-size: 0.75em;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #bdbfdb;
+}
+
+.countdown-married {
+  font-family: 'Cedarville Cursive', cursive;
+  font-size: 1.8em;
+  letter-spacing: 0.06em;
+  color: #bda369;
+  padding: 1em 0;
+}
+
+@media (max-width: 768px) {
+  .our-story-header-item {
+    width: 100%;
+  }
+
+  .our-story-accent-img {
+    width: 200% !important;
+    max-width: 200%;
+    margin-left: -50%;
+  }
+
+  .our-story-body-item {
+    margin: 2em auto;
+  }
+
+  .countdown-number {
+    font-size: 1.8em;
+  }
+
+  .countdown-label {
+    font-size: 1.75em;
+  }
+
+  .countdown-units {
+    gap: 1.5em;
+  }
+}
