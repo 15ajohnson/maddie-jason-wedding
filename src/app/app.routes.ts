@@ -4,6 +4,7 @@ import { Faq } from './faq/faq';
 import { Gallery } from './gallery/gallery';
 import { Travel } from './travel/travel';
 import { Registry } from './registry/registry';
+import { Rsvp } from './rsvp/rsvp';
 
 export const routes: Routes = [
   { path: '', component: Home },
@@ -11,5 +12,6 @@ export const routes: Routes = [
   { path: 'gallery', component: Gallery },
   { path: 'travel', component: Travel },
   { path: 'registry', component: Registry },
+  { path: 'rsvp', component: Rsvp },
   { path: '**', redirectTo: '' }
 ];
